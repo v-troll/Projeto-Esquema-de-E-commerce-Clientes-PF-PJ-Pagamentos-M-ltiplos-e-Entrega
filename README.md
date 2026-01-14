@@ -24,7 +24,6 @@ Este projeto modela o domínio de um e-commerce com as seguintes premissas:
 - **Entrega**: informações de envio por pedido (transportadora, status, código de rastreio, prazos).
 
 ### Regras de Negócio
-
 1. **Exclusividade PF/PJ**: cada `cliente` deve ter **exatamente uma** relação: PF **ou** PJ.
 2. **Pagamentos Múltiplos**: `pedido` pode ter **n** registros em `pagamento`, cada um com sua `forma_pagamento` e `valor`.
 3. **Entrega**: cada `pedido` possui um registro em `entrega` com `status` obrigatório e `codigo_rastreio` único quando informado.
